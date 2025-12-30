@@ -1600,7 +1600,7 @@ uint8_t l2c_fcr_chk_chan_modes(tL2C_CCB* p_ccb) {
       p_ccb->p_rcb->ertm_info.preferred_mode == L2CAP_FCR_ERTM_MODE) {
     log::warn("L2CAP - Peer does not support our desired channel types");
     p_ccb->p_rcb->ertm_info.preferred_mode = 0;
-    return false;
+    //return false;
   }
   return true;
 }
